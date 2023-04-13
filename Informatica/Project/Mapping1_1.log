@@ -1,0 +1,187 @@
+Task Name: Mapping1
+Agent Group Id: 025000000000002
+Agent Group Name: Informatica Cloud Hosted Agent
+Agent Id: 00800000000002V
+Task Type: MTT_TEST
+Run Id: 1
+Service Id: 822959
+Started By: swati.nimje@ibm.com
+Run Context Type: ICS_UI
+04/13/2023 10:38:47 **** Importing Connection: Conn_0120JW0B000000000002 ...
+04/13/2023 10:38:47 **** Importing Source Definition: Phones ...
+04/13/2023 10:38:47 **** Importing Target Definition: Budget_Phones ...
+04/13/2023 10:38:47 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  Phones...
+    Validating Target Definition  Budget_Phones...
+04/13/2023 10:38:47 **** Importing Mapping: Mapping0 ...
+    <Warning> :  transformation: Source - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Source > ] 
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+04/13/2023 10:38:47 **** Importing Workflow: wf_mtt_0120JW0Z000000000002 ...
+    <Warning> :  Invalid value None for attribute Pushdown Optimization Context. Will use the default value None     [Session< s_mtt_0120JW0Z000000000002 > ] 
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+Successfully extracted session instance [s_mtt_0120JW0Z000000000002].  Starting repository sequence id is [66636426]
+DIRECTOR> VAR_27085 [2023-04-13 10:38:47.712] Parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/0120JW0E00000000005L/0120JW/parameters/s_mtt_0120JW0Z000000000002.param] is opened for [session [wf_mtt_0120JW0Z000000000002.s_mtt_0120JW0Z000000000002]].
+DIRECTOR> VAR_27062 [2023-04-13 10:38:47.712] Warning! Cannot find section for worklet [wf_mtt_0120JW0Z000000000002] and folder [] in parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/0120JW0E00000000005L/0120JW/parameters/s_mtt_0120JW0Z000000000002.param].
+DIRECTOR> TM_6014 [2023-04-13 10:38:47.713] Initializing session [s_mtt_0120JW0Z000000000002] at [Thu Apr 13 10:38:47 2023].
+DIRECTOR> TM_6683 [2023-04-13 10:38:47.713] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2023-04-13 10:38:47.713] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2023-04-13 10:38:47.713] Folder: []
+DIRECTOR> TM_6685 [2023-04-13 10:38:47.713] Workflow: [wf_mtt_0120JW0Z000000000002] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6992 [2023-04-13 10:38:47.713] Opearting System Type [Linux]
+DIRECTOR> TM_6101 [2023-04-13 10:38:47.713] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2023-04-13 10:38:47.713] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2023-04-13 10:38:47.713] Session [s_mtt_0120JW0Z000000000002] is run by 64-bit Integration Service  [], version [10.2.0 HotFix2], build [0320].
+MANAGER> PETL_24091 [2023-04-13 10:38:47.724] Thread [MANAGER] has the ID [1].
+MANAGER> PETL_24058 [2023-04-13 10:38:47.724] Running Partition Group [1].
+MANAGER> PETL_24000 [2023-04-13 10:38:47.724] Parallel Pipeline Engine initializing.
+MONITOR> PETL_24091 [2023-04-13 10:38:47.724] Thread [MONITOR] has the ID [2].
+MANAGER> PETL_24001 [2023-04-13 10:38:47.725] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2023-04-13 10:38:47.725] Initializing session run.
+MAPPING> PETL_24091 [2023-04-13 10:38:47.725] Thread [MAPPING] has the ID [3].
+MAPPING> CMN_1569 [2023-04-13 10:38:47.727] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2023-04-13 10:38:47.727] Server Code page: [ISO 8859-1 Western European]
+MAPPING> TM_6151 [2023-04-13 10:38:47.727] The session sort order is [Binary].
+MAPPING> TM_6185 [2023-04-13 10:38:47.727] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65109 [2023-04-13 10:38:47.727] Current Timezone:[UTC +0:0]
+MAPPING> CMN_65111 [2023-04-13 10:38:47.727] Current Process ID:[23069]
+MAPPING> TM_6155 [2023-04-13 10:38:47.727] Using HIGH precision processing.
+MAPPING> TM_6180 [2023-04-13 10:38:47.727] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2023-04-13 10:38:47.727] Session target-based commit interval is [10000].
+MAPPING> TM_6307 [2023-04-13 10:38:47.727] DTM error log disabled. 
+MAPPING> TE_7022 [2023-04-13 10:38:47.728] TShmWriter: Initialized
+MAPPING> TM_6007 [2023-04-13 10:38:47.729] DTM initialized successfully for session [s_mtt_0120JW0Z000000000002]
+DIRECTOR> PETL_24033 [2023-04-13 10:38:47.746] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2023-04-13 10:38:47.746] Starting pre-session tasks. : (Thu Apr 13 10:38:47 2023)
+PRE-SESS> PETL_24091 [2023-04-13 10:38:47.746] Thread [PRE-SESS] has the ID [4].
+MANAGER> PETL_24027 [2023-04-13 10:38:47.747] Pre-session task completed successfully. : (Thu Apr 13 10:38:47 2023)
+DIRECTOR> PETL_24006 [2023-04-13 10:38:47.747] Starting data movement.
+MAPPING> TM_6660 [2023-04-13 10:38:47.747] Total Buffer Pool size is 11280640 bytes and Block size is 624480 bytes.
+READER_1_1_1> PETL_24091 [2023-04-13 10:38:47.748] Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1> DBG_21438 [2023-04-13 10:38:47.749] Reader: Source is [odbc://dbtype=MySQL;host=db4free.net;port=3306;database=fstm4db], Type [ODBC], User [fstm4db]
+READER_1_1_1> BLKR_16051 [2023-04-13 10:38:47.750] Source database connection [Conn_0120JW0B000000000002] code page: [UTF-8 encoding of Unicode]
+READER_1_1_1> CMN_1021 [2023-04-13 10:38:47.750] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+READER_1_1_1> CMN_1021 [2023-04-13 10:38:56.086] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=db4free.net;Database=fstm4db;Port=3306;USER=fstm4db;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [fstm4db]
+ODBC Version:	03.52
+.
+DBMS Name:	MySQL
+.
+DBMS Version:	8.0.32
+.
+Driver Name:	libmyodbc8w.so
+.
+Driver Version:	08.00.0012
+.
+Driver ODBC Version:	03.80
+.
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+READER_1_1_1> BLKR_16003 [2023-04-13 10:38:56.086] Initialization completed successfully.
+TRANSF_1_1_1> PETL_24091 [2023-04-13 10:38:56.087] Thread [TRANSF_1_1_1] has the ID [6].
+WRITER_1_*_1> PETL_24091 [2023-04-13 10:38:56.087] Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1> WRT_8147 [2023-04-13 10:38:56.088] Writer: Target is Database [odbc://dbtype=MySQL;host=db4free.net;port=3306;database=fstm4db], Type [ODBC], User [fstm4db], Bulk Mode [OFF]
+WRITER_1_*_1> CMN_1021 [2023-04-13 10:38:56.088] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+WRITER_1_*_1> CMN_1021 [2023-04-13 10:39:03.761] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=db4free.net;Database=fstm4db;Port=3306;USER=fstm4db;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [fstm4db]
+ODBC Version:	03.52
+.
+DBMS Name:	MySQL
+.
+DBMS Version:	8.0.32
+.
+Driver Name:	libmyodbc8w.so
+.
+Driver Version:	08.00.0012
+.
+Driver ODBC Version:	03.80
+.
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+WRITER_1_*_1> WRT_8221 [2023-04-13 10:39:04.354] Target database connection [Conn_0120JW0B000000000002] code page: [UTF-8 encoding of Unicode]
+WRITER_1_*_1> WRT_8124 [2023-04-13 10:39:04.355] Target Table Budget_Phones :SQL INSERT statement:
+INSERT INTO fstm4db.Budget_Phones(Prod_ID,Prod_Name,Prod_Desc,Prod_Price)  VALUES ( ?, ?, ?, ?) 
+WRITER_1_*_1> WRT_8020 [2023-04-13 10:39:04.355] No column marked as primary key for table [Budget_Phones]. UPDATEs Not Supported.
+WRITER_1_*_1> WRT_8270 [2023-04-13 10:39:04.355] Target connection group #1 consists of target(s) [Budget_Phones]
+WRITER_1_*_1> WRT_8003 [2023-04-13 10:39:04.355] Writer initialization complete.
+READER_1_1_1> BLKR_16007 [2023-04-13 10:39:04.355] Reader run started.
+WRITER_1_*_1> WRT_8005 [2023-04-13 10:39:04.355] Writer run started.
+WRITER_1_*_1> WRT_8158 [2023-04-13 10:39:04.355] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Thu Apr 13 10:39:04 2023
+
+Target tables:
+
+     Budget_Phones
+
+
+READER_1_1_1> RR_4010 [2023-04-13 10:39:04.356] SQ instance [Source] SQL Query [SELECT fstm4db.Phones.Prod_ID, fstm4db.Phones.Prod_Name, fstm4db.Phones.Prod_Desc, fstm4db.Phones.Prod_Price FROM fstm4db.Phones]
+READER_1_1_1> RR_4049 [2023-04-13 10:39:04.356] SQL Query issued to database : (Thu Apr 13 10:39:04 2023)
+READER_1_1_1> RR_4050 [2023-04-13 10:39:05.282] First row returned from database to reader : (Thu Apr 13 10:39:05 2023)
+READER_1_1_1> BLKR_16019 [2023-04-13 10:39:05.282] Read [100] rows, read [0] error rows for source table [Phones] instance name [Phones]
+READER_1_1_1> BLKR_16008 [2023-04-13 10:39:05.282] Reader run completed.
+TRANSF_1_1_1> DBG_21216 [2023-04-13 10:39:05.282] Finished transformations for Source Qualifier [Source]. Total errors [0] 
+WRITER_1_*_1> WRT_8167 [2023-04-13 10:39:05.282] Start loading table [Budget_Phones] at: Thu Apr 13 10:39:05 2023
+WRITER_1_*_1> WRT_8168 [2023-04-13 10:39:08.169] End loading table [Budget_Phones] at: Thu Apr 13 10:39:07 2023
+WRITER_1_*_1> WRT_8141 [2023-04-13 10:39:08.630] 
+Commit on end-of-data  Thu Apr 13 10:39:08 2023
+===================================================
+
+WRT_8036 Target: Budget_Phones (Instance Name: [Budget_Phones])
+WRT_8038 Inserted rows - Requested: 9          Applied: 9          Rejected: 0          Affected: 9         
+
+WRITER_1_*_1> WRT_8035 [2023-04-13 10:39:08.630] Load complete time: Thu Apr 13 10:39:08 2023
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: Budget_Phones (Instance Name: [Budget_Phones])
+WRT_8038 Inserted rows - Requested: 9          Applied: 9          Rejected: 0          Affected: 9         
+
+
+WRITER_1_*_1> WRT_8043 [2023-04-13 10:39:08.630] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2023-04-13 10:39:08.928] Writer run completed.
+MANAGER> PETL_24031 [2023-04-13 10:39:08.929] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Source] has completed.
+	Total Run Time = [1.225288] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [Budget_Phones] has completed.
+	Total Run Time = [3.645980] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+
+MANAGER> PETL_24005 [2023-04-13 10:39:08.929] Starting post-session tasks. : (Thu Apr 13 10:39:08 2023)
+POST-SESS> PETL_24091 [2023-04-13 10:39:08.930] Thread [POST-SESS] has the ID [8].
+MANAGER> PETL_24029 [2023-04-13 10:39:08.930] Post-session task completed successfully. : (Thu Apr 13 10:39:08 2023)
+MAPPING> TM_6018 [2023-04-13 10:39:08.930] The session completed with [0] row transformation errors. 
+MANAGER> PETL_24002 [2023-04-13 10:39:09.180] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2023-04-13 10:39:09.180] Session run completed successfully.
+DIRECTOR> TM_6022 [2023-04-13 10:39:09.180] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2023-04-13 10:39:09.180] Source Load Summary.
+DIRECTOR> CMN_1740 [2023-04-13 10:39:09.180] Table: [Source] (Instance Name: [Source] Instance UI Name: [Source])
+	 Output Rows [100], Affected Rows [100], Applied Rows [100], Rejected Rows [0]
+DIRECTOR> TM_6253 [2023-04-13 10:39:09.180] Target Load Summary.
+DIRECTOR> CMN_1740 [2023-04-13 10:39:09.180] Table: [Budget_Phones] (Instance Name: [Budget_Phones] Instance UI Name: [Target])
+	 Output Rows [9], Affected Rows [9], Applied Rows [9], Rejected Rows [0]
+DIRECTOR> TM_6023 [2023-04-13 10:39:09.180] 
+===================================================
+
+DIRECTOR> TM_6020 [2023-04-13 10:39:09.180] Session [s_mtt_0120JW0Z000000000002] completed at [Thu Apr 13 10:39:09 2023].
